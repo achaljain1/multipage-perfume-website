@@ -1,0 +1,603 @@
+.navnhero{
+    background-image: url(imgs/herobackgroundimg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+/*navbar starts*/
+.navbar{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.151);
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    z-index: 1;
+}
+.navbar h1{
+    font-family: Bernard MT Condensed;
+    -webkit-text-stroke: .2px rgba(255, 255, 255, 0.103);
+}
+.navbar ul{
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    list-style: none;
+
+}
+.navbar ul li a{
+    font-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: rgb(51, 123, 255);
+}
+#check{
+    display: none;
+}
+#check:checked~.navbar ul{
+    display: block;
+}
+@media screen and (max-width:750px){
+    .navbar{
+        height: 80px;
+    }
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+        margin-top: 210px;
+    }
+    .navbar ul li{
+        color: black;
+    }
+}
+@media screen and (min-width:750px) {
+    .navbar label{
+        display: none;
+    }
+    
+}
+/*navbar ends*/
+
+/*heropage starts*/
+
+.hero h1{
+    font-size: 80px;
+    font-family: Engravers MT;
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+    margin-left: 80px;
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width:800px) {
+    .hero h1{
+    font-size: 40px;
+    font-family: Engravers MT;
+    -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+    margin-left: 40px;
+    margin-top: 100px;
+    backdrop-filter: blur(2px);
+    }
+    .navnhero{
+        height: 90vh;
+        width: 100%;
+    }
+}
+/*product section starts*/
+.producttext{
+    font-size: larger;
+    height: auto;
+    text-align: center;
+    font-family: Bernard MT Condensed;
+}
+.producttext a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+}
+.product h1{
+    text-align:center;
+    color: rgb(0, 0, 0)
+
+}
+.ch{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    align-content: center;
+    box-shadow: 1px 1px 10px 3px rgb(62, 139, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 19px;
+}
+.ch:hover{
+    height: 420px;
+    width: 320px;
+    box-shadow: 3px 3px 20px 5px rgb(0, 60, 255);
+}
+.ch img{
+    
+    height: 300px;
+    width: 250px;
+    margin: 25px;
+}
+.ch h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Bernard MT Condensed;
+}
+.ch h2:hover{
+    color: rgb(0, 47, 255);
+}
+
+/*product section ends here*/
+
+/*about us starts */
+.about{
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+@media screen and (max-width:700px){
+    .about{
+        flex-wrap: wrap;
+    }
+}
+
+.aboutimg img{
+    width: 400px;
+    height: 500px;
+}
+.abouttext h2{
+    font-size: 50px;
+    margin: 25px;
+    -webkit-text-stroke: .2px rgb(255, 255, 255);
+    font-family: Bernard MT Condensed;
+}
+.abouttext p{
+    margin: 25px;
+    font-size: 15px;
+}
+/*about end*/
+
+/*gallery*/
+.arrivals{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.arrivalstext h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Bernard MT Condensed ;
+}
+.image img{
+    width: 200px;
+    height: 300px;
+}
+.image img:hover{
+    box-shadow: 2px 2px 10px 2px black;
+}
+@media screen and (max-width:700px){
+    .image img{
+        width:150px;
+        height: 200px;
+    }
+    
+}
+/*gallery end*/
+
+/*reviews*/
+
+.reviews h2{
+    font-size: 40px;
+    text-align: center;
+}
+.reviewtext{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.rch{
+    height: 200px;
+    width: 300px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    align-items: center;
+}
+.rch h3{
+    margin: 20px;
+    margin-top: 50px;
+    font-family:Bernard MT Condensed;
+    color: #000000;
+}
+.rch p{
+    margin: 20px;
+    margin-top: 0px;
+    font-family:Bernard MT Condensed;
+    font-size: 13px;
+}
+.rch textarea {
+    background-color: #dddddd;
+    color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: "Heebo", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 250px;
+    height: 25px;
+    transition: all 0.2s;
+  }
+  
+  .textarea:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+  }
+  
+  .textarea:focus {
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;
+  }
+  
+/*revies end*/
+
+/*contact us*/
+.contacttext{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: Bernard MT Condensed;
+    
+}
+.contactnmap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+@media screen and (max-width:650px) {
+    iframe{
+        height: 325px;
+        width: 350px;
+    }
+    
+}
+/*contact end*/
+
+/*footer starts*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 50px;
+    color: rgb(77, 169, 255);
+    flex-wrap: wrap;
+}
+.footericons{
+    background-color: black;
+    font-size: xx-large;
+    border: 2px solid black;
+}
+.footericons i {
+    padding-left: 300px;
+}
+/*product page's css*/
+
+
+   
+
+.productpage h1 {
+    padding-left: 20px;
+    font-family:  Bernard MT Condensed;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.productpage label{
+    margin-left: 50px;
+}
+.productpage select{
+    margin-top: 30px;
+}
+.pr img{
+    height: 250px;
+    width: 250px;
+}
+
+.combin1{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.combin2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.combin3{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.combin4{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pr {
+    box-shadow: 3px 3px 10px 3px black;
+    border-radius: 15px ;
+    margin: 30px;
+}
+.pr:hover{
+    box-shadow: 3px 3px 15px 3px black;
+}
+.pr h4{
+    text-align: left;
+    margin: 5px;
+}
+.pr h5{
+    text-align: left;
+    margin: 5px;
+}
+.pr button {
+    background-color: rgb(61, 122, 255);
+    border-radius: 8px;
+    border-width: 0;
+    color: #ffe3e3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Bernard MT Condensed;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 250px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.pr a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+  
+/*product page's end*/
+
+/*sign up page's css*/
+.navnform{
+    background-image: url(bottle-perfume-based-soil-ingredients_23-2150756836.jpg);
+    width: 100%;
+    height: 125vh;
+}
+.signup{
+    width: 50%;
+    height: auto;
+    align-self: center;
+    margin-left: 25%;
+    margin-top: 50px;
+    background-color: white;
+
+}
+.signup:hover{
+    box-shadow: 3px 3px 10px 3px black;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #0044ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #0044ff;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/*sign up page ends*/
+
+/* Cart page css*/
+
+.carttext h1{
+    padding-top: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cartitem{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ffffff41;
+    align-items: center;
+    margin-top: 50px;
+}
+.cartitem img{
+    height: 250px;
+    width: 255px;
+}
+.cartitem h3{
+    text-align: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cartitem h4{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0044ff;
+
+}
+.cartitem2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ffffff41;
+    align-items: center;
+    margin-top: 50px;
+}
+.cartitem2 img{
+    height: 250px;
+    width: 255px;
+}
+.cartitem2 h3{
+    text-align: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cartitem2 h4{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0044ff;
+
+}
+.cartitem{
+    box-shadow: 2px 2px 15px 2px black;
+    border-radius: 7px;
+   margin: 50px;
+}
+.cartitem2{
+    box-shadow: 2px 2px 15px 2px black;
+    border-radius: 7px;
+    margin: 50px;
+}
+.but{
+    
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    text-align: center;
+}  
+
+.but:hover {
+    opacity:1;
+    background-color: whitesmoke;
+}
+.total h2{
+    margin-right: 40px;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.total p{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+/*cart page end*/
+
+/*successfull order*/
+.order{
+    width: 100%;
+    height: 90vh;
+
+}
+.order img{
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 12.5%;
+}
+.BUT2{
+    align-items: center;
+    color: #0044ff;
+    background-color: white;
+}
+.BUT2:hover{
+    background-color: whitesmoke;
+}
